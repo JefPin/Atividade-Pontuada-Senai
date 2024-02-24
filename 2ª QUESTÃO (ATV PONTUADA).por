@@ -1,10 +1,10 @@
-programa{
+programa{
 	
-	funcao inicio(){
+	funcao inicio(){
 		// Validando Váriaveis.
 		
-		cadeia sexo, EstadoCivil, nome, Feminino, Masculino, AnosCasada
-
+		cadeia sexo, EstadoCivil, nome, Feminino, Masculino
+		inteiro AnosCasada = 0
 		// Validando Dados.
 
 		escreva("Por favor, Digite seu nome: ")
@@ -18,8 +18,8 @@ programa{
 		se(EstadoCivil == "Casada"){
 			escreva("Quantos anos de Casado(a)? ")
 			leia(AnosCasada)
-			}senao{
-				escreva("Estado Civil Solteiro(a)")}
+			}senao se(EstadoCivil == "Solteira"){
+				escreva("Estado Civil Solteira(o)")}
 			 
 		escreva("Qual o seu Sexo? ")
 		leia(sexo)
@@ -33,7 +33,7 @@ programa{
 		escreva("\nSexo: ", sexo)
 		
 		se(EstadoCivil == "Casada"){
-			escreva("\nAnos Casado(a) ",EstadoCivil)
+			escreva("\nAnos Casado(a) ", AnosCasada)
 		}senao{
 			escreva("\n Solteiro(a)")
 			
