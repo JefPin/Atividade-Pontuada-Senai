@@ -1,6 +1,6 @@
-programa{ 
+programa{ 
 	
-	funcao inicio(){
+	funcao inicio(){
 	
 			// Validando Váriaveis.
 			
